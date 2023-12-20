@@ -1,0 +1,9 @@
+{"scripts": {
+  "dev:api": "cd api && npm run dev",
+  "dev:client": "cd client && npm run dev",
+  "dev": "concurrently --kill-others-on-fail \"npm run dev:api\" \"npm run dev:client\""
+},
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
